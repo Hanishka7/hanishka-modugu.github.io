@@ -1,0 +1,460 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hanishka Modugu | Portfolio</title>
+
+<style>
+:root {
+  --bg: #f7f8fa;
+  --card: #ffffff;
+  --ink: #1d2433;
+  --muted: #5b6475;
+  --accent: #0f766e;
+  --line: #e3e7ee;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #11151c;
+    --card: #1a2029;
+    --ink: #e8ecf2;
+    --muted: #a3acba;
+    --accent: #2dd4bf;
+    --line: #2a323e;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 16px 64px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  line-height: 1.15;
+  margin: 0 0 8px;
+}
+
+.headline {
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.meta {
+  color: var(--muted);
+  margin: 0 0 18px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.links a {
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  padding: 7px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: .95rem;
+}
+
+.links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+  margin: 44px 0 14px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.chips li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: .95rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+}
+
+.card .stack {
+  color: var(--accent);
+  font-size: .9rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.card p {
+  margin: 0 0 8px;
+}
+
+.card a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+ul.plain {
+  margin: 0;
+  padding-left: 20px;
+}
+
+ul.plain li {
+  margin-bottom: 7px;
+}
+
+footer {
+  margin-top: 56px;
+  color: var(--muted);
+  font-size: .9rem;
+  text-align: center;
+}
+
+@media(max-width: 600px) {
+  main {
+    padding: 32px 16px 48px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 17px;
+  }
+}
+</style>
+</head>
+
+<body>
+<main>
+
+<!-- PROFILE -->
+<header>
+  <h1>Hanishka Modugu</h1>
+
+  <p class="headline">
+    Software Developer | MERN Stack | Python | AI
+  </p>
+
+  <p class="meta">
+    B.Tech Computer Science & Engineering (2023–2027)<br>
+    SR University, Warangal | CGPA: 8.8/10
+  </p>
+
+  <nav class="links">
+    <a href="https://www.linkedin.com/in/hanishkamodugu/" target="_blank">LinkedIn</a>
+
+    <a href="https://github.com/Hanishka7" target="_blank">GitHub</a>
+
+    <a href="https://leetcode.com/u/hanishka_modugu/" target="_blank">LeetCode</a>
+
+    <a href="https://www.hackerrank.com/profile/hanishka_modugu" target="_blank">HackerRank</a>
+
+    <a href="mailto:hanishkasharon7@gmail.com">Email</a>
+
+    <a href="resume.pdf" target="_blank">Resume PDF</a>
+  </nav>
+</header>
+
+
+<!-- ABOUT ME -->
+<section>
+  <h2>About Me</h2>
+
+  <p>
+    I am a final-year Computer Science and Engineering student
+    at SR University with a strong interest in software development,
+    problem-solving, and AI-based applications. I have hands-on
+    experience in Python, C, JavaScript, and MERN stack technologies,
+    along with a foundation in Data Structures and Algorithms
+    and core computer science concepts.
+  </p>
+
+  <p>
+    During my internship at NIT Warangal, I contributed to a
+    Brain-Computer Interface (BCI)-based Thought-to-Speech
+    Communication System, gaining practical exposure to EEG
+    signal processing and machine learning. I enjoy building
+    practical applications, exploring new technologies,
+    and continuously improving my technical skills.
+  </p>
+</section>
+
+
+<!-- TECHNICAL SKILLS -->
+<section>
+  <h2>Technical Skills</h2>
+
+  <ul class="chips">
+    <li>Python</li>
+    <li>C</li>
+    <li>JavaScript</li>
+
+    <li>React.js</li>
+    <li>HTML5</li>
+    <li>CSS3</li>
+
+    <li>Node.js</li>
+    <li>Express.js</li>
+    <li>REST APIs</li>
+
+    <li>MySQL</li>
+    <li>MongoDB</li>
+
+    <li>Data Structures & Algorithms</li>
+    <li>OOP</li>
+    <li>DBMS</li>
+    <li>Operating Systems</li>
+    <li>Computer Networks</li>
+
+    <li>Git</li>
+    <li>GitHub</li>
+    <li>VS Code</li>
+  </ul>
+</section>
+
+
+<!-- PROJECTS -->
+<section>
+  <h2>Projects</h2>
+
+  <article class="card">
+
+    <h3>Airport Management Dashboard</h3>
+
+    <p class="stack">
+      React.js · Node.js · Express.js · MongoDB · JavaScript · REST APIs
+    </p>
+
+    <p>
+      Developed a responsive airport management dashboard
+      for managing flights, bookings, and airport operations.
+      Built REST APIs using Node.js and Express.js with
+      MongoDB for data management. Implemented role-based
+      interfaces, search, filtering, and responsive
+      frontend components.
+    </p>
+
+    <a href="https://github.com/Hanishka7" target="_blank">
+      View on GitHub →
+    </a>
+
+  </article>
+
+
+  <article class="card">
+
+    <h3>Gesture-Based AI Authentication System</h3>
+
+    <p class="stack">
+      Python · OpenCV · Computer Vision · Machine Learning
+    </p>
+
+    <p>
+      Developed a gesture-based authentication system using
+      Python and OpenCV for secure user verification.
+      Implemented real-time gesture recognition using
+      computer vision techniques and built an authentication
+      workflow to validate users based on recognized
+      gesture patterns. Optimized image-processing logic
+      to improve recognition accuracy and response time.
+    </p>
+
+    <a href="https://github.com/Hanishka7" target="_blank">
+      View on GitHub →
+    </a>
+
+  </article>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+<section>
+  <h2>Experience</h2>
+
+  <article class="card">
+
+    <h3>
+      AIoT Intern | National Institute of Technology (NIT), Warangal
+    </h3>
+
+    <p class="stack">
+      May 2025 – June 2025
+    </p>
+
+    <p>
+      Contributed to the development of a Brain-Computer
+      Interface (BCI)-based Thought-to-Speech Communication
+      System for converting EEG brain signals into predicted
+      text and speech.
+    </p>
+
+    <p>
+      Assisted in EEG data preprocessing, including data
+      cleaning, standardization, and label encoding for
+      machine learning-based brain signal analysis using Python.
+    </p>
+
+    <p>
+      Worked with a CNN + LSTM-based approach for EEG signal
+      classification and analysis to support the prediction
+      of intended alphabet/text outputs.
+    </p>
+
+    <p>
+      Contributed to the end-to-end workflow connecting EEG
+      data acquisition, preprocessing, machine learning-based
+      classification, and text-to-speech output for
+      assistive communication.
+    </p>
+
+    <p class="stack">
+      Technologies: Python · EEG Signal Processing · Machine Learning
+      · Deep Learning · CNN · LSTM · Text-to-Speech
+    </p>
+
+  </article>
+</section>
+
+
+<!-- ACHIEVEMENTS -->
+<section>
+  <h2>Achievements</h2>
+
+  <ul class="plain">
+
+    <li>
+      Solved 100+ Data Structures and Algorithms problems on LeetCode.
+    </li>
+
+    <li>
+      Achieved Python Gold Badge on HackerRank.
+    </li>
+
+    <li>
+      Earned 20+ Microsoft Learn badges.
+    </li>
+
+    <li>
+      Earned 12 Credly technical badges.
+    </li>
+
+    <li>
+      Participated in technical hackathons and software
+      development programs.
+    </li>
+
+  </ul>
+</section>
+
+
+<!-- CERTIFICATIONS -->
+<section>
+  <h2>Certifications</h2>
+
+  <ul class="plain">
+
+    <li>
+      Oracle Cloud Infrastructure 2025 – AI Foundations Associate
+    </li>
+
+    <li>
+      Fundamentals of Generative AI – Microsoft Learning
+    </li>
+
+    <li>
+      AWS Academy Graduate – Cloud Developing Training Badge
+    </li>
+
+    <li>
+      Networking Basics – Cisco
+    </li>
+
+  </ul>
+</section>
+
+
+<!-- EDUCATION -->
+<section>
+  <h2>Education</h2>
+
+  <article class="card">
+
+    <h3>SR University, Warangal</h3>
+
+    <p class="stack">
+      Bachelor of Technology – Computer Science and Engineering
+    </p>
+
+    <p>
+      2023 – 2027
+    </p>
+
+    <p>
+      CGPA: 8.8/10
+    </p>
+
+    <p>
+      Relevant Coursework: Data Structures & Algorithms,
+      Object-Oriented Programming, Database Management Systems,
+      Operating Systems, Computer Networks, Software Engineering.
+    </p>
+
+  </article>
+</section>
+
+
+<footer>
+  © 2026 Hanishka Modugu | All Rights Reserved
+</footer>
+
+</main>
+</body>
+</html>
